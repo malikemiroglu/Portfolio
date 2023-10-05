@@ -3,6 +3,8 @@ export const Bio = {
     roles: ["Jr.Frontend Developer"],
     description:
         "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+    resumeEN: "https://drive.google.com/file/d/1F6D0hQ7yn38D0CSFsVk1LhMA_jDquhtx/view?usp=sharing",
+    resumeTR: "https://drive.google.com/file/d/1cOcGwkTp4XjgveJ1WtrLB8ydTvAB84Xb/view?usp=sharing",
     github: "https://github.com/malikemiroglu",
     linkedin: "https://www.linkedin.com/in/malikemiroglu",
 }
@@ -92,7 +94,7 @@ export const projects = [
         description: "Çalışma açıklaması",
         image: "https://picsum.photos/200/300",
         tags: ["React", "Redux", "JavaScript", "HTML", "CSS"],
-        category: "CSS"
+        category: "CSS",
         github: "https://github.com/malikemiroglu/CssWork",
         demo: "https://yemek-sitesi-1.netlify.app/",
     }

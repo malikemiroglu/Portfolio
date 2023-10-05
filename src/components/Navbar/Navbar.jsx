@@ -11,7 +11,7 @@ const Navbar = () => {
   const theme = useTheme();
 
   return (
-    <Nav>
+    <Nav className='nav'>
       <NavbarContainer>
         <NavLogo to='/' style={{ display:"flex", alignItems:"center", color:"white",  cursor: "pointer"}}>
           <DiCssdeck size="3rem" /><Span>Portfolio</Span>
