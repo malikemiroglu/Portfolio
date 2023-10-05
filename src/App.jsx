@@ -1,15 +1,21 @@
+import { ThemeProvider } from 'styled-components'
 import { useState } from 'react'
+import { lightTheme, darkTheme } from './utils/theme'
 import './App.css'
+import { BrowserRouter as Router } from 'react-router-dom'
+import Navbar from './components/Navbar/Navbar'
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [darkMode, setDarkMode] = useState(true)
 
   return (
-    <>
-      <h1>Hello, world!</h1>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
-      <p>You clicked {count} times</p>
-    </>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <Router>
+        <Navbar />
+      </Router>
+    </ThemeProvider>
   )
 }
 
