@@ -5,6 +5,8 @@ import './App.css'
 import { BrowserRouter as Router } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import HeroSection from './components/HeroSection/HeroSection'
+import Skills from './components/Skills/Skills'
+
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.body};
@@ -12,6 +14,10 @@ const Body = styled.div`
   transition: all 0.25s linear;
 `
 
+const Wrapper = styled.div`
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%,30% 98%, 0 100%);
+`
 
 function App() {
   const [darkMode, setDarkMode] = useState(true)
@@ -22,6 +28,9 @@ function App() {
         <Navbar />
         <Body className='body'>
           <HeroSection/>
+          <Wrapper className='wrapper'>
+            <Skills />
+          </Wrapper>
         </Body>
       </Router>
     </ThemeProvider>
