@@ -86,7 +86,7 @@ export const SkillsData = [
   },
 ]
 
-export const projects = [
+export const ProjectsData = [
   {
     id: 0,
     title: "Çalışma başlığı",

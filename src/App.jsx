@@ -6,6 +6,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import HeroSection from './components/HeroSection/HeroSection'
 import Skills from './components/Skills/Skills'
+import Projects from './Projects/Projects'
 
 
 const Body = styled.div`
@@ -21,6 +22,7 @@ const Wrapper = styled.div`
 
 function App() {
   const [darkMode, setDarkMode] = useState(true)
+  const [openModal, setOpenModal] = useState({ state: false, project: null})
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
@@ -31,6 +33,7 @@ function App() {
           <Wrapper className='wrapper'>
             <Skills />
           </Wrapper>
+          <Projects openModal={openModal} setOpenModal={setOpenModal}/>
         </Body>
       </Router>
     </ThemeProvider>
