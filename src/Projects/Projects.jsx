@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Container, Wrapper, Title, Desc, ToggleButtonGroup, ToggleButton, Divider, CardContainer } from './ProjectsStyle';
 import { ProjectsData } from '../data/constants';
+import ProjectCards from '../Cards/ProjectsCards'
+import isPropValid from '@emotion/is-prop-valid';
 
 
 const Projects = ({openModal,setOpenModal}) => {
@@ -14,36 +16,24 @@ const Projects = ({openModal,setOpenModal}) => {
                     I have worked on a wide range of projects. From web apps to android apps. Here are some of my projects.
                 </Desc>
                 <ToggleButtonGroup>
-                    <ToggleButton onClick={() => setToggle('all')} active={toggle === 'all' ? true : false}>All</ToggleButton>
+                    <ToggleButton onClick={() => setToggle('all')} data-is-active={toggle === 'all'} value="all">All</ToggleButton>
                     <Divider />
 
-                    <ToggleButton onClick={() => setToggle('web')} active={toggle === 'web' ? true : false}>Web</ToggleButton>
+                    <ToggleButton onClick={() => setToggle('css')} data-is-active={toggle === 'css'} value="css">Css</ToggleButton>
                     <Divider />
 
-                    <ToggleButton onClick={() => setToggle('mobile')} active={toggle === 'mobile' ? true : false}>Mobile</ToggleButton>
+                    <ToggleButton onClick={() => setToggle('javascript')} active={toggle === 'javascript'} value={"javascript"}>JavaScript</ToggleButton>
                 </ToggleButtonGroup>
 
                 <CardContainer>
-                    {ProjectsData.map((project, index) => {
-                        return (
-                            <div key={index}>
-                                {toggle === 'all' && (
-                                    <div onClick={() => setOpenModal({state: true, project: project})}>
-                                        <img src={project.image} alt={project.name} />
-                                        <h3>{project.title}</h3>
-                                        <p>{project.description}</p>
-                                    </div>
-                                )}
-                                {toggle === project.type && (
-                                    <div onClick={() => setOpenModal({state: true, project: project})}>
-                                        <img src={project.image} alt={project.name} />
-                                        <h3>{project.title}</h3>
-                                        <p>{project.description}</p>
-                                    </div>
-                                )}
-                            </div>
-                        )
-                    })}
+                    {ProjectsData.map((project) => {
+                        if (toggle === 'all') {
+                            return <ProjectCards project={project} openModal={openModal} setOpenModal={setOpenModal} key={project.id}/>
+                        } else if (toggle === project.category) {
+                            return <ProjectCards project={project} openModal={openModal} setOpenModal={setOpenModal} key={project.id} />
+                        }
+                    }
+                    )}
                 </CardContainer>
             </Wrapper>
         </Container>
