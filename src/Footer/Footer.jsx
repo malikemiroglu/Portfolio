@@ -13,6 +13,7 @@ function Footer() {
                 <NavLink href='#about'>About</NavLink>
                 <NavLink href='#skills'>Skills</NavLink>
                 <NavLink href='#projects'>Projects</NavLink>
+                <NavLink href='#contact'>Contact</NavLink>
             </Nav>
             <SocialMediaIcons>
                 <SocialMediaIcon href={Bio.linkedin} target='_blank'><LinkedInIcon /></SocialMediaIcon>
