@@ -16,10 +16,10 @@ const Projects = ({openModal,setOpenModal}) => {
                     I have worked on a wide range of projects. From web apps to android apps. Here are some of my projects.
                 </Desc>
                 <ToggleButtonGroup>
-                    <ToggleButton onClick={() => setToggle('all')} data-is-active={toggle === 'all'} value="all">All</ToggleButton>
+                    <ToggleButton onClick={() => setToggle('all')} active={toggle === 'all'} value="all">All</ToggleButton>
                     <Divider />
 
-                    <ToggleButton onClick={() => setToggle('css')} data-is-active={toggle === 'css'} value="css">Css</ToggleButton>
+                    <ToggleButton onClick={() => setToggle('css')} active={toggle === 'css'} value="css">Css</ToggleButton>
                     <Divider />
 
                     <ToggleButton onClick={() => setToggle('javascript')} active={toggle === 'javascript'} value={"javascript"}>JavaScript</ToggleButton>
