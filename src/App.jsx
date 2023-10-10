@@ -8,6 +8,7 @@ import HeroSection from './components/HeroSection/HeroSection'
 import Skills from './components/Skills/Skills'
 import Projects from './Projects/Projects'
 import Contact from './Contact/Contact'
+import Footer from './Footer/Footer'
 
 
 const Body = styled.div`
@@ -39,6 +40,7 @@ function App() {
           <Wrapper>
             <Contact />
           </Wrapper>
+          <Footer />
         </Body>
       </Router>
     </ThemeProvider>
