@@ -30,7 +30,6 @@ const HeroSection = () => {
                 <SubTitle>{Bio.description}</SubTitle>
                 <HeroButtonContainer>
                     <ResumeButton href={Bio.resumeEN} target='_blank'>Check Resume</ResumeButton>
-                    <ResumeButton href={Bio.resumeTR} target='_blank'>Check Resume TR</ResumeButton>
                 </HeroButtonContainer>
             </HeroLeftContainer>
 

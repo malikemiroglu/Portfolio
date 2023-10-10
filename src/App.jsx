@@ -9,6 +9,7 @@ import Skills from './components/Skills/Skills'
 import Projects from './Projects/Projects'
 import Contact from './Contact/Contact'
 import Footer from './Footer/Footer'
+import ProjectDetails from './ProjectDetails/ProjetDetails'
 
 
 const Body = styled.div`
@@ -41,6 +42,9 @@ function App() {
             <Contact />
           </Wrapper>
           <Footer />
+          {openModal.state &&
+            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal}/>
+          }
         </Body>
       </Router>
     </ThemeProvider>
