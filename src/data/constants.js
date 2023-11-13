@@ -96,7 +96,7 @@ export const ProjectsData = [
     title: "Hangman Game",
     date: "2023",
     description: "A simple hangman game I made while learning TypeScript.",
-    image: "../src/images/adam-asmaca.png",
+    image: "https://github.com/malikemiroglu/AdamAsmaca/blob/master/src/assets/adam-asmaca.png?raw=true",
     tags: ["HTML", "CSS", "JavaScript","TypeScript","React"],
     category: "javascript",
     github: "https://github.com/malikemiroglu/AdamAsmaca",
