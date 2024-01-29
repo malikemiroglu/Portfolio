@@ -115,4 +115,5 @@ export const SkillItem = styled.div`
 export const SkillImage = styled.img`
   width: 24px;
   height: 24px;
+  object-fit: contain;
 `
