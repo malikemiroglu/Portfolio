@@ -107,7 +107,7 @@ export const ProjectsData = [
     title: "Gold GYM Fitness",
     date: "2023",
     description: "The Gold Gym Fitness application is a React-based web platform designed to provide users with a curated selection of exercise routines.",
-    image: "https://camo.githubusercontent.com/746abd821ec7c0224f27176a2ea5c698157b05aaa1f58390059629bf6644dae9/68747470733a2f2f692e6962622e636f2f597439737047632f696d6167652e706e67",
+    image: "https://camo.githubusercontent.com/afb614c0548891ab0b3707bf69b99b2c9101952d8ce21e4607862a7a9eca1dca/68747470733a2f2f692e6962622e636f2f597439737047632f696d6167652e706e67",
     tags: ["JavaScript", "React", "Material-UI", "React Router DOM", "Fetch API"],
     category: "javascript",
     github: "https://github.com/malikemiroglu/Fitness-Exercises",
