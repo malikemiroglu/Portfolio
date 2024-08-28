@@ -1,10 +1,10 @@
 export const Bio = {
     name: "Malik Emiroglu",
-    roles: ["Jr.Frontend Developer"],
+    roles: ["Frontend Developer"],
     description:
         "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
-    resumeEN: "https://drive.google.com/file/d/1F6D0hQ7yn38D0CSFsVk1LhMA_jDquhtx/view?usp=sharing",
-    resumeTR: "https://docs.google.com/document/d/1xuyUaTL-Jk1FExudmwIJRu2SwA_-98XD30joQtkVhY8/edit?usp=sharing",
+    resumeEN: "https://docs.google.com/document/d/1ASYaMo3He0m4s8JkBirB7NXuFaQ8xwNyIfooCEItyz4/edit?usp=sharing",
+    resumeTR: "https://docs.google.com/document/d/1ASYaMo3He0m4s8JkBirB7NXuFaQ8xwNyIfooCEItyz4/edit?usp=sharing",
     github: "https://github.com/malikemiroglu",
     linkedin: "https://www.linkedin.com/in/malikemiroglu",
 }
