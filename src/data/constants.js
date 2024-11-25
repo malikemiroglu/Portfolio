@@ -1,3 +1,5 @@
+import hurenerjiImage from "../images/hurenerji.png";
+
 export const Bio = {
     name: "Malik Emiroglu",
     roles: ["Frontend Developer"],
@@ -81,6 +83,11 @@ export const SkillsData = [
             "https://www.gstatic.com/devrel-devsite/prod/v870e399c64f7c43c99a3043db4b3a74327bb93d0914e84a0c3dba90bbfd67625/firebase/images/touchicon-180.png",
         },
         {
+          name: "MySQL",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSODdZr1a0BwyZvXe9Ye0OhqNWDL6zPhBJoJA&s",
+        },
+        {
           name: "Git",
           image:
             "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
@@ -115,6 +122,17 @@ export const SkillsData = [
 ]
 
 export const ProjectsData = [
+  {
+    id: 13,
+    title: "Hurenerji Website",
+    date: "2024",
+    description: "A small project as a freelancer. I developed a website for a company that sells solar panels.",
+    image: hurenerjiImage,
+    tags: ["JavaScript","TypeScript","React","Context", "React Router DOM", "Tailwind"],
+    category: "javascript",
+    // github: "https://github.com/malikemiroglu/AdamAsmaca",
+    demo: "https://demohurenerji.netlify.app/",
+  },
   {
     id: 12,
     title: "Hangman Game",
