@@ -6,7 +6,7 @@ export const Bio = {
     description:
         "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
     resumeEN: "https://docs.google.com/document/d/1ASYaMo3He0m4s8JkBirB7NXuFaQ8xwNyIfooCEItyz4/edit?usp=sharing",
-    resumeTR: "https://docs.google.com/document/d/1ASYaMo3He0m4s8JkBirB7NXuFaQ8xwNyIfooCEItyz4/edit?usp=sharing",
+    resumeTR: "https://drive.google.com/file/d/1q9xAYaqiOh4Pj27BkQapcvvYtDAI_9bL/view?usp=drive_link",
     github: "https://github.com/malikemiroglu",
     linkedin: "https://www.linkedin.com/in/malikemiroglu",
 }

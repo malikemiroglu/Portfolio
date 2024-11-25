@@ -29,7 +29,13 @@ const HeroSection = () => {
                 </TextLoop>
                 <SubTitle>{Bio.description}</SubTitle>
                 <HeroButtonContainer>
-                    <ResumeButton href={Bio.resumeTR} target='_blank'>Check Cv</ResumeButton>
+                    {/* <ResumeButton href={Bio.resumeTR} target='_blank'>Check Cv</ResumeButton> */}
+                    <ResumeButton
+                        href={Bio.resumeTR}
+                        download="Malik_Emiroglu_CV.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >Download CV</ResumeButton>
                 </HeroButtonContainer>
             </HeroLeftContainer>
 
