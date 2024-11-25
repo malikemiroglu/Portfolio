@@ -3,7 +3,15 @@ import { Container, Wrapper, Title, Desc, ToggleButtonGroup, ToggleButton, Divid
 import { ProjectsData } from '../data/constants';
 import ProjectCards from '../Cards/ProjectsCards'
 import isPropValid from '@emotion/is-prop-valid';
+import styled from 'styled-components'
 
+
+const ProjectCardsContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); /* Dinamik kolonlar */
+    gap: 20px; 
+    padding: 20px;
+`;
 
 const Projects = ({openModal,setOpenModal}) => {
     const [toggle, setToggle] = useState('all');
@@ -25,7 +33,7 @@ const Projects = ({openModal,setOpenModal}) => {
                     <ToggleButton onClick={() => setToggle('javascript')} active={toggle === 'javascript'} value={"javascript"}>JavaScript</ToggleButton>
                 </ToggleButtonGroup>
 
-                <CardContainer>
+                <ProjectCardsContainer>
                     {ProjectsData.map((project) => {
                         if (toggle === 'all') {
                             return <ProjectCards project={project} openModal={openModal} setOpenModal={setOpenModal} key={project.id}/>
@@ -34,7 +42,7 @@ const Projects = ({openModal,setOpenModal}) => {
                         }
                     }
                     )}
-                </CardContainer>
+                </ProjectCardsContainer>
             </Wrapper>
         </Container>
     )
